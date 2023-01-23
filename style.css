@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.container {    
+    background-color: #F1F2F6;
+    padding: 40px;
+    line-height:2rem;
+}
+
+p {
+    line-height: 3rem;
+}
+
+.inputs {
+    margin-top: 15px;
+    background-color: #FFffff;
+    padding: 30px;
+    border: 1px solid;
+}
+
+#btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    color:#ffffff;
+    margin: 10px 0px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+/* -------------------------------RETURN TABLE STYLES */ 
+
+
+.table-content {
+    table-layout: fixed;
+    width: 70%;
+    min-width: 400px;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    margin: 25px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+.table-content thead tr {
+    background-color: #4CAF50;
+    color:#ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-content th, 
+.table-content tr, 
+.table-content td {
+    padding: 12px 15px;
+}
+
+.table-content tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-content tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table-content tbody tr:last-of-type{
+    border-bottom: 2px solid #4CAF50;
+}
+
+.table-content tbody tr.active-row {
+    font-weight: bold;
+    color:#4CAF50;
+}
+
+

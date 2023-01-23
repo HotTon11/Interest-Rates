@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Rates</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Interest Rate Comparison</h1>
+      <p> <i>
+       Quickly compare returns of 2 different interest rates in a styled HTML table.</i>
+      </p>
+      <div class="inputs">
+        <form action="" onsubmit="func()">
+          <label for="">Investible Funds</label>
+          <input
+            type="text"
+            placeholder="enter in dollars"
+            id="investibleFunds"
+          />
+          <br />
+          <label for="rate1">Choose first interest rate</label>
+          <select name="rate1" id="rate1">
+            <option value=".02" selected>2%</option>
+            <option value=".0225">2.25%</option>
+            <option value=".025">2.5%</option>
+            <option value=".0275">2.75%</option>
+            <option value=".03">3.00%</option>
+            <option value=".0325">3.25%</option>
+            <option value=".035">3.50%</option>
+            <option value=".0375">3.75%</option>
+            <option value=".04">4.00%</option>
+            <option value=".0425">4.25%</option>
+            <option value=".045">4.50%</option>
+            <option value=".0475">4.75%</option>
+            <option value=".05">5.00%</option>
+          </select>
+          <br />
+          <label for="rate1">Choose second interest rate</label>
+          <select name="rate2" id="rate2">
+            <option value=".02" selected>2%</option>
+            <option value=".0225">2.25%</option>
+            <option value=".025">2.5%</option>
+            <option value=".0275">2.75%</option>
+            <option value=".03">3.00%</option>
+            <option value=".0325">3.25%</option>
+            <option value=".035">3.50%</option>
+            <option value=".0375">3.75%</option>
+            <option value=".04">4.00%</option>
+            <option value=".0425">4.25%</option>
+            <option value=".045">4.50%</option>
+            <option value=".0475">4.75%</option>
+            <option value=".05">5.00%</option>
+          </select>
+          <br />
+          <button onclick="returnText()" id="btn" class="submit">
+            Calculate
+          </button>
+        </form>
+    
+
+<!-- SHOW RESULTS IN A TABLE -->
+<div style="overflow-x:auto;">
+      <table class="table-content">
+        <thead>
+          <tr>
+            <th>RESULTS</th>
+            <th>/ Year</th>
+            <th>/ Month</th>
+            <th>/ Week</th>
+            <th>/ Day</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>IR 1</td>
+          <td id="IR1yearSpan"></td>
+          <td id="IR1monthSpan"></td>
+          <td id="IR1weekSpan"></td>
+          <td id="IR1daySpan"></td>
+        </tr>
+        <tr>
+          <td>IR 2</td>
+          <td id="IR2yearSpan"></td>
+          <td id="IR2monthSpan"></td>
+          <td id="IR2weekSpan"></td>
+          <td id="IR2daySpan"></td>
+        </tr>
+        <tr>
+          <td>+/-</td>
+          <td id="yearDiff"></td>
+          <td id="monthDiff"></td>
+          <td id="weekDiff"></td>
+          <td id="dayDiff"></td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
